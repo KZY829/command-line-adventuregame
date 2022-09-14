@@ -33,5 +33,3 @@ if count == 10:
         print('壊れた船があった!\n航海中・・・\n結果は・・・{}\nまた遊んでください!'.format(random.choice(escape_success_or_failure)))
     else:
         print('この島も悪くないと思い、この島に住むことにした!\nお疲れ様でした!\nまた遊んでください!')
-        
-#         weogjka
