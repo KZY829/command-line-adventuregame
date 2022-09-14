@@ -11,26 +11,18 @@ def main():
     print('朝です。')
     event = input('今日は何をしますか？ 1.探索 2.寝る 3.狩りをする 半角で入力してください。 >>')
     if event == '1':
-        print('探索中・・・\n{}を見つけた!'.format(random.choice(item)))
-        event2 = input('次は何をしますか? 1.寝る 半角で入力してください。 >>')
-        if event2 == '1':
-            print('就寝中・・・\n')
+        print('探索中・・・\n{}を見つけた!\nもう夕暮れだ!{}は眠りについた!'.format(random.choice(item), name))
+        print('就寝中・・・\n')
     if event == '2':
         print('就寝中・・・\n')
     if event == '3':
-        print('狩り中・・・\n{}を捕まえた!'.format(random.choice(animal)))
-        event2 = input('次は何をしますか? 1.寝る 半角で入力してください。 >>')
-        if event2 == '1':
-            print('就寝中・・・\n')
+        print('狩り中・・・\n{}を捕まえた!\mもう夕暮れだ!{}は眠りについた!'.format(random.choice(animal)))
+        print('就寝中・・・\n')
 
 while count_down < 10:
     count_down += 1
     main()
 
     if count_down == 10:
-        print('脱出の出口を見つけた!この島から出ていきますか？')
-        escape = input('この島から出ていく?[1.yes or 2.no] >>')
-        if escape == '1':
-            print('壊れた船があった!\n航海中・・・\n結果は・・・{}\nまた遊んでください!'.format(random.choice(escape_success_or_failure)))
-        else:
-            print('この島も悪くないと思い、ここに住むことにした・・・\n遊んでくれてありがとうございました!\nまた遊んでください!')
+        print('脱出の出口を見つけた!')
+        print('壊れた船があった!\n航海中・・・\n結果は・・・{}\nまた遊んでください!'.format(random.choice(escape_success_or_failure)))
