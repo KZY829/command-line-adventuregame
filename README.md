@@ -4,8 +4,4 @@
 
 よろしくお願いします。
 
-command line adventure Ver.1.2リリース。
-
-・次回の更新予告・
-
-脱出プログラムを関数にしてより見やすく。
+command line adventure Ver.1.3リリース。
